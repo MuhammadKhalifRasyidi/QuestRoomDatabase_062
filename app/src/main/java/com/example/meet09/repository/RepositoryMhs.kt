@@ -4,4 +4,5 @@ import com.example.meet09.data.entity.Mahasiswa
 
 interface RepositoryMhs {
     suspend fun insertMhs(mahasiswa: Mahasiswa)
+
 }

@@ -1,4 +1,4 @@
-package com.example.meet09.ui.mahasiswa
+package com.example.meet09.ui.view.mahasiswa
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box

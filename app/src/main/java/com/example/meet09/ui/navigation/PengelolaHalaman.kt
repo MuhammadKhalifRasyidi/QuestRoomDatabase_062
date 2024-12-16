@@ -6,8 +6,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.meet09.ui.mahasiswa.DestinasiInsert
-import com.example.meet09.ui.mahasiswa.InsertMhsView
+import com.example.meet09.ui.view.mahasiswa.DestinasiInsert
+import com.example.meet09.ui.view.mahasiswa.InsertMhsView
 
 @Composable
 fun PengolahHalaman(

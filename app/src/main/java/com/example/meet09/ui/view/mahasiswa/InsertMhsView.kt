@@ -227,6 +227,7 @@ fun FormMahasiswa(
             text = errorState.jenisKelamin ?: "",
             color = Color.Red
         )
+
         OutlinedTextField(
             modifier = Modifier.fillMaxWidth(),
             value = mahasiswaEvent.alamat,
@@ -263,23 +264,23 @@ fun FormMahasiswa(
                         text = k,
                         color = Color.Red
                     )
-
-                    OutlinedTextField(
-                        modifier = Modifier.fillMaxWidth(),
-                        value = mahasiswaEvent.angkatan,
-                        onValueChange = {
-                            onValueChange(mahasiswaEvent.copy(angkatan = it))
-                        },
-                        label = { Text("Angkatan") },
-                        isError = errorState.angkatan != null,
-                        placeholder = { Text("Masukkan Angkatan") },
-                    )
-                    Text(
-                        text = errorState.angkatan ?: "",
-                        color = Color.Red
-                    )
                 }
             }
         }
+
+        OutlinedTextField(
+            modifier = Modifier.fillMaxWidth(),
+            value = mahasiswaEvent.angkatan,
+            onValueChange = {
+                onValueChange(mahasiswaEvent.copy(angkatan = it))
+            },
+            label = { Text("Angkatan") },
+            isError = errorState.angkatan != null,
+            placeholder = { Text("Masukkan Angkatan") },
+        )
+        Text(
+            text = errorState.angkatan ?: "",
+            color = Color.Red
+        )
     }
 }

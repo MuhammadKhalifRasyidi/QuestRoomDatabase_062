@@ -19,10 +19,10 @@ fun PengolahHalaman(
     navController: NavHostController = rememberNavController(), modifier: Modifier = Modifier
 ) {
     NavHost(
-        navController = navController, startDestination = DestinasiInsert.route
+        navController = navController, startDestination = DestinasiHome.route
     ) {
         composable(
-            route = DestinasiInsert.route
+            route = DestinasiHome.route
         ) {
             HomeMhsView(onDetailClick = { nim ->
                 navController.navigate("${DestinasiDetail.route}/$nim")
